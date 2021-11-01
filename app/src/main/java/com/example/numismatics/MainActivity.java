@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.onDelet
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
 
         MyAdapter adapter = new MyAdapter(this);
         recyclerView.setAdapter(adapter);
